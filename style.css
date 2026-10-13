@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F6F6F6;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 100px auto;
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 32px;
+}
+
+table {
+    width: 100%; 
+    margin-top: 10px;
+}
+
+tr, td {
+    padding-bottom: 20px;
+}
+
+th {
+   text-align: left;
+   padding-bottom: 15px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.btn-add {
+    padding: 10px;
+}
+
+.btn-edit, .btn-add {
+    padding: 5px;
+    background-color: #1f79ff;
+    border-radius: 8px;
+    color: #FFF;
+}
+
+.btn-edit:hover, .btn-add:hover {
+    background-color: #1558bd;
+}
+
+.btn-delete {
+    padding: 5px;
+    background-color: #ff1f1f;
+    border-radius: 8px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: #c21414;
+}
+
+
+/* add/edit screen */
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.add-header {
+    text-align: center;
+    padding-bottom: 20px;
+}
