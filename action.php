@@ -34,5 +34,4 @@ if (isset($_POST['edit'])) {
     header("Location: index.php");
 }
 
-
 ?>

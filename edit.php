@@ -28,17 +28,25 @@
             }
         ?>
 
-        <form action="action.php" method="POST">
+        <form id="myForm" action="action.php" method="POST">
             <input type="hidden" name="id" value="<?=$id?>">
-            <input type="text" name="name" value="<?=$name?>">
-            <input type="text" name="email" value="<?=$email?>">
-            <input type="text" name="message" value="<?=$message?>">
+
+            <span id="nameError" style="color: red; display: none;">Enter username:</span>
+            <input type="text" id="name" name="name" value="<?=$name?>">
+
+            <span id="emailError" style="color: red; display: none;">Enter email:</span>
+            <input type="text" id="email" name="email" value="<?=$email?>">
+
+            <span id="messError" style="color: red; display: none;">Enter message:</span>
+            <input type="text" id="message" name="message" value="<?=$message?>">
+
             <div class="buttons">
                 <button type="submit" class="btn btn-edit" name="edit">Edit User</button>
                 <a href="index.php" class="btn btn-cancel">Cancel</a>
             </div>
         </form>
     </div>
-    
+
+    <script src="main.js"></script>
 </body>
 </html>
