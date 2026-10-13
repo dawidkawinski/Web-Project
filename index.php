@@ -18,7 +18,7 @@ $users = mysqli_query($connect, "SELECT id, name, email, message FROM users")
 <body>
     <div class="container">
         <h1>User Table</h1>
-        <a href="add.php" class="btn-add">Add User</a>
+        <a href="add.php" class="btn btn-add">Add User</a>
 
             <table>
                 <tr>
@@ -36,8 +36,8 @@ $users = mysqli_query($connect, "SELECT id, name, email, message FROM users")
                         <td><?= $user['email'] ?></td>
                         <td><?= $user['message'] ?></td>
                         <td>
-                            <a href="edit.php" class="btn-edit">Edit</a>
-                            <a class="btn-delete">Delete</a>
+                            <a href="edit.php" class="btn btn-edit">Edit</a>
+                            <a class="btn btn-delete" name="delete">Delete</a>
                         </td>
                     </tr>
                 <?php endwhile; ?>

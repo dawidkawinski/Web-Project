@@ -10,11 +10,14 @@
 
     <div class="container">
         <h1 class='add-header'>Add User</h1>
-        <form action="$_POST">
+        <form  action="action.php" method="POST">
             <input type="text" name="name" placeholder="Your Name">
             <input type="text" name="email" placeholder="Your Email">
-            <input type="text" name="name" placeholder="Your Message">
-    
+            <input type="text" name="message" placeholder="Your Message">
+            <div class="buttons">
+                <button type="submit" class="btn btn-add" name="add">Add User</button>
+                <a href="index.php" class="btn btn-cancel">Cancel</a>
+            </div>
         </form>
     </div>
     
