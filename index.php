@@ -36,8 +36,8 @@ $users = mysqli_query($connect, "SELECT id, name, email, message FROM users")
                         <td><?= $user['email'] ?></td>
                         <td><?= $user['message'] ?></td>
                         <td>
-                            <a href="edit.php" class="btn btn-edit">Edit</a>
-                            <a class="btn btn-delete" name="delete">Delete</a>
+                            <a href="edit.php?id=<?php echo urlencode($user['id']); ?>" class="btn btn-edit">Edit</a>
+                            <a href="action.php?id=<?php echo urlencode($user['id']); ?>" class="btn btn-delete" name="delete">Delete</a>
                         </td>
                     </tr>
                 <?php endwhile; ?>

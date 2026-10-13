@@ -46,7 +46,7 @@ h1 {
     cursor: pointer;
 }
 
-.btn-add, .btn-cancel {
+.btn-add, .btn-cancel, .btn-edit, .btn-delete {
     padding: 10px;
 }
 
