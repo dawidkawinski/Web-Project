@@ -1,4 +1,4 @@
 ## 🌐 Live Demo
 
 Aplikacja jest dostępna online pod adresem:  
-👉 **[web-project.site.je](http://site.je)**
+👉 [Strona z projektem](https://web-project.site.je)
